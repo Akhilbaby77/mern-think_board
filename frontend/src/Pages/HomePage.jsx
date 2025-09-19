@@ -10,7 +10,8 @@ import toast from 'react-hot-toast'
 import Note from '../Components/Note'
 
 import NoNotesFound from '../Components/NoNotesFound'
-import api from '../../../backend/src/lib/axios'
+import api from '../lib/axios'
+
 
   function HomePage() {
 
@@ -21,7 +22,7 @@ import api from '../../../backend/src/lib/axios'
     useEffect(()=>{
       const getNotes=async()=>{
         try{
-          const res = await axios.get("http://localhost:5001/api/notes")
+          const res = await api.get("/notes")
           console.log(res.data)
           setNotes(res.data)
           setRateLimit(false)

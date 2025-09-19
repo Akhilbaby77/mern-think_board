@@ -7,7 +7,8 @@ import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
 import { toast} from 'react-hot-toast'
 import axios from 'axios';
-import api from '../../../backend/src/lib/axios';
+import api from '../lib/axios';
+
 
 function CreatePage() {
 

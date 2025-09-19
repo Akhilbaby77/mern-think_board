@@ -6,7 +6,9 @@ import { Link, useNavigate, useParams,  } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import api from '../../../backend/src/lib/axios';
+import api from '../lib/axios';
+
+
 
 const NoteDetailsPage=() => {
   const {id} = useParams()
