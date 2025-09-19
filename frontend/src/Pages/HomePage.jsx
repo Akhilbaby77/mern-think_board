@@ -10,6 +10,7 @@ import toast from 'react-hot-toast'
 import Note from '../Components/Note'
 
 import NoNotesFound from '../Components/NoNotesFound'
+import api from '../../../backend/src/lib/axios'
 
   function HomePage() {
 
@@ -42,7 +43,7 @@ import NoNotesFound from '../Components/NoNotesFound'
     },[])
     const deleteNote = async (id) => {
       try {
-        await axios.delete(`http://localhost:5001/api/notes/${id}`);
+        await api.delete(`/notes/${id}`);
         toast.success("Note deleted successfully ✅");
 
         setNotes((prevNotes) => prevNotes.filter((note) => note._id !== id));

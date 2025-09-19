@@ -7,6 +7,8 @@ import { Link, useNavigate } from 'react-router';
 import { useState } from 'react';
 import { toast} from 'react-hot-toast'
 import axios from 'axios';
+import api from '../../../backend/src/lib/axios';
+
 function CreatePage() {
 
 const [title,setTitle] = useState("");
@@ -25,7 +27,7 @@ const navigate =useNavigate()
 
  setLoading(true)
  try{
-await axios.post("http://localhost:5001/api/notes" ,{
+await api.post("/notes" ,{
   title,
   content
 })
