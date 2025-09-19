@@ -1,0 +1,61 @@
+.NoNotes{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    padding:20px;
+    margin-top: 160px;
+}
+
+
+.noteimg img{
+    width: 150px;
+    height: 150px;
+}
+
+.noteimg{
+    padding: 20px;
+}
+
+
+.sen{
+    padding: 20px   ;
+    color: gray;
+}
+
+
+
+.addnote {
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #22c55e; /* modern green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: glow 2s infinite alternate;
+  }
+  
+  .addnote:hover {
+    transform: scale(1.04);
+    background-color: #16a34a; 
+  }
+
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #22c55e;
+      
+    }
+    50% {
+      box-shadow:  0 0 20px #22c55e;
+      
+    }
+    100% {
+      box-shadow: 0 0 10px #22c55e;
+    }
+  }
+
+

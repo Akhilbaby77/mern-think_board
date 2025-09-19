@@ -1,0 +1,25 @@
+.home-page {
+    background-color: #121212;
+    min-height: 100vh;         
+}
+
+
+.each-note-box {
+    display: flex;           
+    flex-wrap: wrap;          
+    justify-content: center;  
+    padding-top: 120px;
+}
+
+
+.home-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   
+}
+
+
+.rate{
+    padding-top: 100px;
+}

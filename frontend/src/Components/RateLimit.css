@@ -1,0 +1,27 @@
+.rate-limit {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E; /* dark card */
+    margin: 20px 200px;
+    padding: 20px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    border: 1px solid #22c55e; /* green accent border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle depth */
+  }
+  
+  .charge-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .img {
+    margin-right: 20px;
+  }
+  
+  .light-text {
+    color: #9CA3AF; /* muted gray for secondary text */
+    font-size: 0.9rem;
+  }
+  
